@@ -1,0 +1,31 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #000;
+    align-items: center;
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.loader {
+    animation: spin 1s linear infinite;
+    border: 3px solid #ddd;
+    border-top: 3px solid #42a5f5;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+}
+
+@keyframes spin {
+    to {
+        border-top-color: #ec407a;
+        transform: rotate(360deg);
+    }
+}
